@@ -4,7 +4,7 @@ extends CharacterBody2D
 @export var jump_velocity = -400.0
 
 #float variable for max time kick is enabled
-var _maxKickTime: float = 0.5
+@export var _maxKickTime: float = 0.5
 #float variable for kick timer
 var _kickTimer: float = 0
 
