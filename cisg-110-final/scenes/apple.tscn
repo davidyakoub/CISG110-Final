@@ -1,0 +1,39 @@
+[gd_scene load_steps=8 format=3 uid="uid://ctatwhjqaphyq"]
+
+[ext_resource type="Script" uid="uid://box05jvvl3kyb" path="res://scripts/props.gd" id="1_7vr8k"]
+[ext_resource type="Texture2D" uid="uid://bj4vvn80427sh" path="res://sprites/item_tileset.png" id="1_h071m"]
+[ext_resource type="PackedScene" uid="uid://rgwrnmsghqsx" path="res://scenes/explosion_vfx.tscn" id="2_3dmh2"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_h071m"]
+bounce = 0.5
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o6xl0"]
+radius = 8.75769
+
+[sub_resource type="GDScript" id="GDScript_h071m"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tipki"]
+atlas = ExtResource("1_h071m")
+region = Rect2(42, 21, 7, 6)
+
+[node name="Apple" type="RigidBody2D" node_paths=PackedStringArray("_explosion_VFX")]
+scale = Vector2(-0.3999964, -0.3999964)
+collision_layer = 4
+collision_mask = 7
+physics_material_override = SubResource("PhysicsMaterial_h071m")
+script = ExtResource("1_7vr8k")
+_explosion_VFX = NodePath("ExplosionVFX")
+
+[node name="ExplosionVFX" parent="." instance=ExtResource("2_3dmh2")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.43083015, 0.43083015)
+shape = SubResource("CircleShape2D_o6xl0")
+script = SubResource("GDScript_h071m")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(-5.14523, -5.14523)
+texture = SubResource("AtlasTexture_tipki")
+script = SubResource("GDScript_h071m")
+
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
