@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @export var speed = 300.0
-@export var jump_velocity = -400.0
+@export var jump_velocity = -500.0
 
 #float variable for max time kick is enabled
 @export var _maxKickTime: float = 0.5
@@ -12,11 +12,10 @@ var _kickTimer: float = 0
 @export var _kickLeft: Node2D
 
 @export var _rightKickDir: Vector2 = Vector2.RIGHT
-@export var _leftKickDir: Vector2 = Vector2.RIGHT
+@export var _leftKickDir: Vector2 = Vector2.LEFT
 
 
 var _facingRight: bool = true
-
 
 func _enterTree() -> void:
 	_disableKick()
