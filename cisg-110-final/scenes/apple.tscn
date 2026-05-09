@@ -16,7 +16,7 @@ radius = 29.014013
 atlas = ExtResource("1_h071m")
 region = Rect2(59, 28, 17, 17)
 
-[node name="Apple" type="RigidBody2D" node_paths=PackedStringArray("_explosion_VFX")]
+[node name="Teddy" type="RigidBody2D" node_paths=PackedStringArray("_explosion_VFX")]
 scale = Vector2(-0.3999964, -0.3999964)
 collision_layer = 4
 collision_mask = 7

@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://bxfk8skgf0y87"]
+[gd_scene load_steps=10 format=3 uid="uid://bxfk8skgf0y87"]
 
 [ext_resource type="Texture2D" uid="uid://bd65jwiwdj2cc" path="res://sprites/Rat-DarkGrey-Walk.png" id="1_1l88y"]
 [ext_resource type="Script" uid="uid://ck4togvqfgpnl" path="res://scenes/rat.gd" id="1_77a1s"]
+[ext_resource type="PackedScene" uid="uid://rgwrnmsghqsx" path="res://scenes/explosion_vfx.tscn" id="2_acf8p"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_77a1s"]
 atlas = ExtResource("1_1l88y")
@@ -42,10 +43,13 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nnna8"]
 size = Vector2(64, 26)
 
-[node name="Rat" type="RigidBody2D"]
+[node name="Rat" type="RigidBody2D" node_paths=PackedStringArray("_explosion_VFX")]
 collision_layer = 16
 collision_mask = 3
 script = ExtResource("1_77a1s")
+_explosion_VFX = NodePath("ExplosionVFX")
+
+[node name="ExplosionVFX" parent="." instance=ExtResource("2_acf8p")]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 z_index = 20
@@ -55,3 +59,6 @@ sprite_frames = SubResource("SpriteFrames_368s2")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 3)
 shape = SubResource("RectangleShape2D_nnna8")
+one_way_collision = true
+
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
