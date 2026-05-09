@@ -4730,6 +4730,7 @@ tile_set = SubResource("TileSet_85g3d")
 
 [node name="Teddy" type="RigidBody2D" parent="."]
 z_index = 10
+position = Vector2(0, -17)
 collision_layer = 4
 collision_mask = 15
 physics_material_override = SubResource("PhysicsMaterial_o6xl0")
@@ -4743,38 +4744,38 @@ position = Vector2(50.999996, 4)
 scale = Vector2(1.7352941, 1.7352941)
 texture = SubResource("AtlasTexture_85g3d")
 
-[node name="Apple" parent="." instance=ExtResource("7_o6xl0")]
-position = Vector2(141, -70)
+[node name="Teddy2" parent="." instance=ExtResource("7_o6xl0")]
+position = Vector2(141, -87)
 
-[node name="Apple12" parent="." instance=ExtResource("7_o6xl0")]
-position = Vector2(174, -71)
+[node name="Teddy3" parent="." instance=ExtResource("7_o6xl0")]
+position = Vector2(174, -88)
 
-[node name="Apple2" parent="." instance=ExtResource("7_o6xl0")]
-position = Vector2(214, -70)
+[node name="Teddy4" parent="." instance=ExtResource("7_o6xl0")]
+position = Vector2(214, -87)
 
-[node name="Apple3" parent="." instance=ExtResource("7_o6xl0")]
-position = Vector2(41, -167)
+[node name="Teddy5" parent="." instance=ExtResource("7_o6xl0")]
+position = Vector2(41, -184)
 
-[node name="Apple4" parent="." instance=ExtResource("7_o6xl0")]
-position = Vector2(-10, -167)
+[node name="Teddy6" parent="." instance=ExtResource("7_o6xl0")]
+position = Vector2(-10, -184)
 
-[node name="Apple5" parent="." instance=ExtResource("7_o6xl0")]
-position = Vector2(-62, -169)
+[node name="Teddy7" parent="." instance=ExtResource("7_o6xl0")]
+position = Vector2(-62, -186)
 
-[node name="Apple6" parent="." instance=ExtResource("7_o6xl0")]
-position = Vector2(176, -235)
+[node name="Teddy8" parent="." instance=ExtResource("7_o6xl0")]
+position = Vector2(176, -252)
 
-[node name="Apple7" parent="." instance=ExtResource("7_o6xl0")]
-position = Vector2(203, -236)
+[node name="Teddy9" parent="." instance=ExtResource("7_o6xl0")]
+position = Vector2(203, -253)
 
-[node name="Apple8" parent="." instance=ExtResource("7_o6xl0")]
-position = Vector2(-204, -242)
+[node name="Teddy10" parent="." instance=ExtResource("7_o6xl0")]
+position = Vector2(-204, -259)
 
-[node name="Apple9" parent="." instance=ExtResource("7_o6xl0")]
-position = Vector2(-173, -242)
+[node name="Teddy11" parent="." instance=ExtResource("7_o6xl0")]
+position = Vector2(-173, -259)
 
-[node name="Apple10" parent="." instance=ExtResource("7_o6xl0")]
-position = Vector2(142, -395)
+[node name="Teddy12" parent="." instance=ExtResource("7_o6xl0")]
+position = Vector2(142, -412)
 
 [connection signal="body_shape_entered" from="Player/KickRight" to="Player" method="_on_kick_right_body_shape_entered"]
 [connection signal="body_shape_entered" from="Player/KickLeft" to="Player" method="_on_kick_left_body_shape_entered"]

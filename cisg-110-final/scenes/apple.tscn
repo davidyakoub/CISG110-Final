@@ -8,13 +8,13 @@
 bounce = 0.5
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_o6xl0"]
-radius = 8.75769
+radius = 29.014013
 
 [sub_resource type="GDScript" id="GDScript_h071m"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tipki"]
 atlas = ExtResource("1_h071m")
-region = Rect2(42, 21, 7, 6)
+region = Rect2(59, 28, 17, 17)
 
 [node name="Apple" type="RigidBody2D" node_paths=PackedStringArray("_explosion_VFX")]
 scale = Vector2(-0.3999964, -0.3999964)
@@ -32,7 +32,7 @@ shape = SubResource("CircleShape2D_o6xl0")
 script = SubResource("GDScript_h071m")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(-5.14523, -5.14523)
+scale = Vector2(-1.5451975, -1.5451975)
 texture = SubResource("AtlasTexture_tipki")
 script = SubResource("GDScript_h071m")
 
