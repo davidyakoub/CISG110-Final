@@ -1,6 +1,8 @@
 class_name Player
 extends CharacterBody2D
 
+@onready var _anims = get_node("AnimatedSprite2D")
+
 @export var speed = 300.0
 @export var jump_velocity = -500.0
 
@@ -43,8 +45,11 @@ func _physics_process(delta: float) -> void:
 		
 	if direction > 0:
 		_facingRight = true
+		_anims.flip_h = false
 	elif direction < 0:
 		_facingRight = false
+		_anims.flip_h = true
+
 		 
 		#check if the timer is running (if the kick timer > 0)
 		if _kickTimer > 0:
@@ -57,6 +62,11 @@ func _physics_process(delta: float) -> void:
 
 	if Input.is_action_just_pressed("ui_accept"):
 		_kick()
+		
+	if velocity.x == 0 && velocity.y == 0:
+		_anims.play("Idle")
+	else:
+		_anims.play("Walk")
 
 	move_and_slide()
 	
