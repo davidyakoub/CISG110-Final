@@ -9,6 +9,9 @@ func _physics_process(delta: float) -> void:
 	
 	move_and_collide(linear_velocity * delta)
 
+func _ready() -> void:
+	max_contacts_reported = 3
+	contact_monitor = true
 
 func _on_body_shape_entered(body_rid: RID, body: Node, body_shape_index: int, local_shape_index: int) -> void:
 	if body is Player:

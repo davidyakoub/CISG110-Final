@@ -4718,38 +4718,62 @@ z_index = 5
 tile_map_data = PackedByteArray("AAAEAP7/AAAGAAQAAAAFAP7/AAAGAAQAAAAGAP7/AAAGAAQAAAAIAPv/AAAGAAQAAAAJAPv/AAAGAAQAAAABAPv/AAAGAAQAAAAAAPv/AAAGAAQAAAD///v/AAAGAAQAAAD+//v/AAAGAAQAAAD9//v/AAAGAAQAAAAFAPn/AAAGAAQAAAAGAPn/AAAGAAQAAAD///f/AAAGAAQAAAAAAPf/AAAGAAQAAAD+//f/AAAGAAQAAAAEAPT/AAAGAAQAAAAGAPb/AAAGAAQAAAAHAPb/AAAGAAQAAAAIAPb/AAAGAAQAAAAJAPb/AAAGAAQAAAD7//7/AAAGAAQAAAD6//7/AAAGAAQAAAD5//7/AAAGAAQAAAD4//z/AAAGAAQAAAD3//z/AAAGAAQAAAD2//z/AAAGAAQAAAD5//n/AAAGAAQAAAD6//n/AAAGAAQAAAD2//f/AAAGAAQAAAD3//f/AAAGAAQAAAD7//X/AAAGAAQAAAD8//X/AAAGAAQAAAD9//X/AAAGAAQAAAA=")
 tile_set = SubResource("TileSet_85g3d")
 
-[node name="Teddy2" parent="." instance=ExtResource("7_o6xl0")]
+[node name="Node" type="Node" parent="."]
+
+[node name="Teddy2" parent="Node" instance=ExtResource("7_o6xl0")]
 position = Vector2(141, -87)
+rotation = -3.1415927
+scale = Vector2(0.3999964, 0.3999964)
 
-[node name="Teddy3" parent="." instance=ExtResource("7_o6xl0")]
+[node name="Teddy3" parent="Node" instance=ExtResource("7_o6xl0")]
 position = Vector2(174, -88)
+rotation = 3.1415927
+scale = Vector2(0.39999637, 0.39999637)
 
-[node name="Teddy4" parent="." instance=ExtResource("7_o6xl0")]
+[node name="Teddy4" parent="Node" instance=ExtResource("7_o6xl0")]
 position = Vector2(214, -87)
+rotation = -3.1415927
+scale = Vector2(0.3999964, 0.3999964)
 
-[node name="Teddy5" parent="." instance=ExtResource("7_o6xl0")]
+[node name="Teddy5" parent="Node" instance=ExtResource("7_o6xl0")]
 position = Vector2(41, -184)
+rotation = -3.1415927
+scale = Vector2(0.3999964, 0.3999964)
 
-[node name="Teddy6" parent="." instance=ExtResource("7_o6xl0")]
+[node name="Teddy6" parent="Node" instance=ExtResource("7_o6xl0")]
 position = Vector2(-10, -184)
+rotation = -3.1415927
+scale = Vector2(0.3999964, 0.3999964)
 
-[node name="Teddy7" parent="." instance=ExtResource("7_o6xl0")]
+[node name="Teddy7" parent="Node" instance=ExtResource("7_o6xl0")]
 position = Vector2(-62, -186)
+rotation = -3.1415927
+scale = Vector2(0.3999964, 0.3999964)
 
-[node name="Teddy8" parent="." instance=ExtResource("7_o6xl0")]
+[node name="Teddy8" parent="Node" instance=ExtResource("7_o6xl0")]
 position = Vector2(176, -252)
+rotation = -3.1415927
+scale = Vector2(0.3999964, 0.3999964)
 
-[node name="Teddy9" parent="." instance=ExtResource("7_o6xl0")]
+[node name="Teddy9" parent="Node" instance=ExtResource("7_o6xl0")]
 position = Vector2(203, -253)
+rotation = -3.1415927
+scale = Vector2(0.3999964, 0.3999964)
 
-[node name="Teddy10" parent="." instance=ExtResource("7_o6xl0")]
+[node name="Teddy10" parent="Node" instance=ExtResource("7_o6xl0")]
 position = Vector2(-204, -259)
+rotation = -3.1415927
+scale = Vector2(0.3999964, 0.3999964)
 
-[node name="Teddy11" parent="." instance=ExtResource("7_o6xl0")]
+[node name="Teddy11" parent="Node" instance=ExtResource("7_o6xl0")]
 position = Vector2(-173, -259)
+rotation = -3.1415927
+scale = Vector2(0.3999964, 0.3999964)
 
-[node name="Teddy12" parent="." instance=ExtResource("7_o6xl0")]
+[node name="Teddy12" parent="Node" instance=ExtResource("7_o6xl0")]
 position = Vector2(142, -412)
+rotation = -3.1415927
+scale = Vector2(0.3999964, 0.3999964)
 
 [node name="Rat" parent="." instance=ExtResource("8_tipki")]
 position = Vector2(100, 16)
