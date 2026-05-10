@@ -4,12 +4,15 @@ extends RigidBody2D
 
 @export var _speed: float = 50.0
 
+@export var direction: int = 1
+
 func _physics_process(delta: float) -> void:
-	linear_velocity.x = -_speed
+	linear_velocity.x = -_speed * direction
 	
 	move_and_collide(linear_velocity * delta)
 
 func _ready() -> void:
+	lock_rotation = true
 	max_contacts_reported = 3
 	contact_monitor = true
 
